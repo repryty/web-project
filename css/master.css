@@ -1,23 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
 body{
-  background: url('../img/background-1.jpg') center top;
-  background-size: cover;
-  background-attachment: fixed;
   margin: 0;
   font-family: 'Noto Sans KR', sans-serif;
-}
-.header{
-  background-color: white;
-  height: 15%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-hr{
-  border-style: solid;
-  border: gray solid 5px;
-}
-.title{
-  font-size: 300%;
 }
