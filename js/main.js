@@ -1,3 +1,4 @@
+var title, text;
 function File(fileName, content) {
     var blob = new Blob([content], { type: 'text/plain' });
 
@@ -14,4 +15,9 @@ function File(fileName, content) {
     a.download = fileName;
     a.href = objURL;
     a.click();
+}
+function newfile() {
+  title = document.getElementById("title").value;
+  text = document.getElementById("in").value;
+  File(title, text)
 }
