@@ -19,5 +19,5 @@ function File(fileName, content) {
 function newfile() {
   title = document.getElementById("title").value;
   text = document.getElementById("in").value;
-  File(title, text)
+  File(title, text);
 }
