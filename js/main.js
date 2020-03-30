@@ -19,5 +19,9 @@ function File(fileName, content) {
 function newfile() {
   title = document.getElementById("title").value;
   text = document.getElementById("in").value;
+  if(title==null||text==null||title==""||text==""){
+    alert("내용을 적어주세요");
+    return;
+  }
   File(title, text);
 }
