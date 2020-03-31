@@ -35,7 +35,7 @@ function getTime() {
   document.write("<p id=\"time\"현재 시간: "+time.getHours()+"시 "+time.getMinutes()+"분 "+time.getSeconds()+"초</p>");
   setInterval(function() {
     time = new Date;
-    timer = "이번에 접속한 시간: "+time.getHours()+"시 "+time.getMinutes()+"분 "+time.getSeconds()+"초";
+    timer = "현재 시간: "+time.getHours()+"시 "+time.getMinutes()+"분 "+time.getSeconds()+"초";
     document.getElementById("time").innerHTML = timer;
 }, 300);
 }
