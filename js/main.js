@@ -39,3 +39,23 @@ function getTime() {
     document.getElementById("time").innerHTML = timer;
 }, 300);
 }
+/*function number1() {
+  //try{
+  var num1 = document.getElementById("i1").value;
+  var num2 = document.getElementById("i2").value;
+  var num3 = parseInt(num1);
+  var num4 = parseInt(num2);
+  var a, b, c;
+  for (var i = 0; i < (num2-num1); i++) {
+    a[i] = i*3;
+    b[i] = i*5;
+    c[i] = i;
+    if(c[i]==a[i]||c[i]==b[i]){
+
+    }
+  }
+  document.getElementById("i3").innerHTML = timer;
+/*} catch(e){
+  document.getElementById("i3").innerHTML = "오류 발생! 값을 다시 확인해주세요!";
+}
+}*/
