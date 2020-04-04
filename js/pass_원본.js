@@ -139,4 +139,31 @@ var getCookie = function(name) {
 var value = document.cookie.match('(^|;) ?' + name + '=([^;]*)(;|$)');
 return value? value[2] : null;
 };
-var _0x3a03=['44746a61424c86daa2d049ba6a72c1599ea1d95b428d3a4b610082411d1b9df7','d28ab44b3ef4b571a3003a1be6441637c5951a99d16d89764727b46ce7833674','로그인\x20실패!','write','로그인에\x20성공하셨습니다!!','log','????:\x20없어요!','로그인','자동로그인\x20성공','로그인\x20성공.','힌트는','비밀번호가\x20맞지\x20않습니다.'];(function(_0x11bda0,_0x3a0323){var _0x4052cc=function(_0x54fc0d){while(--_0x54fc0d){_0x11bda0['push'](_0x11bda0['shift']());}};_0x4052cc(++_0x3a0323);}(_0x3a03,0xae));var _0x4052=function(_0x11bda0,_0x3a0323){_0x11bda0=_0x11bda0-0x0;var _0x4052cc=_0x3a03[_0x11bda0];return _0x4052cc;};function pass(){try{var _0x118d17=null;if(getCookie('로그인')=='헿'){document[_0x4052('0x9')](_0x4052('0x2'));return;}var _0x166b9c=SHA256(prompt('비밀번호를\x20입력해\x20주세요.\x0a힌트를\x20얻으려면\x20\x27힌트\x27라고\x20입력해\x20주세요.'));}catch(_0x4f1b49){alert(_0x4052('0x8'));pass();}if(_0x166b9c==_0x4052('0x6')){alert(_0x4052('0x4'));alert(_0x4052('0x0'));pass();}else if(_0x166b9c==_0x4052('0x7')){console[_0x4052('0xb')](_0x4052('0x3'));alert(_0x4052('0xa'));setCookie(_0x4052('0x1'),헿,0xa);_0x118d17=!![];}else{alert(_0x4052('0x5'));pass();}}
+function pass() {
+  try{
+  var login = null;
+  if(getCookie("로그인")=="헿"){
+    document.write("자동로그인 성공")
+    return
+  }
+  var password = SHA256(prompt("비밀번호를 입력해 주세요.\n힌트를 얻으려면 '힌트'라고 입력해 주세요."));
+}
+catch(e){
+  alert("로그인 실패!");
+  pass()
+}
+  if(password=="44746a61424c86daa2d049ba6a72c1599ea1d95b428d3a4b610082411d1b9df7"){
+    alert("힌트는");
+    alert("????: 없어요!");
+    pass();
+  } else if(password=="d28ab44b3ef4b571a3003a1be6441637c5951a99d16d89764727b46ce7833674"){
+    console.log("로그인 성공.");
+    alert("로그인에 성공하셨습니다!!");
+    setCookie("로그인",헿,10);
+    login = true;
+  } else {
+    alert("비밀번호가 맞지 않습니다.")
+    pass();
+  }
+
+}
