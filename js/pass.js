@@ -140,11 +140,18 @@ var value = document.cookie.match('(^|;) ?' + name + '=([^;]*)(;|$)');
 return value? value[2] : null;
 };
 function pass() {
+  try{
+  var login = null;
   if(getCookie("로그인")=="헿"){
     document.write("자동로그인 성공")
     return
   }
   var password = SHA256(prompt("비밀번호를 입력해 주세요.\n힌트를 얻으려면 '힌트'라고 입력해 주세요."));
+}
+catch(e){
+  alert("로그인 실패!");
+  pass()
+}
   if(password=="44746a61424c86daa2d049ba6a72c1599ea1d95b428d3a4b610082411d1b9df7"){
     alert("힌트는");
     alert("????: 없어요!");
@@ -153,11 +160,10 @@ function pass() {
     console.log("로그인 성공.");
     alert("로그인에 성공하셨습니다!!");
     setCookie("로그인",헿,10);
-
+    login = true;
   } else {
     alert("비밀번호가 맞지 않습니다.")
     pass();
   }
-
 
 }
