@@ -2,12 +2,22 @@
 body{
   margin: 0;
   font-family: 'Noto Sans KR', sans-serif;
+  text-align: center;
 }
 .safe1{
-
+  width: 100%;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 button{
-  border: 1px gray solid;
-  border-radius: 2px;
+  border: 1px aqua solid;
   background-color: white;
+  box-shadow: 1px 1px 5px 0 darkgray;
+}
+.clock{
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
