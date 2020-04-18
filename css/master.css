@@ -14,10 +14,16 @@ body{
 button{
   border: 1px aqua solid;
   background-color: white;
-  box-shadow: 1px 1px 5px 0 darkgray;
+  box-shadow: 0px 0px 5px 0 darkgray;
 }
 .clock{
   position: absolute;
   top: 0;
   width: 100%;
+}
+select{
+  border: 1px aqua solid;
+  background-color: white;
+  box-shadow: 0px 0px 5px 0 darkgray;
+  display: inline-block;
 }
