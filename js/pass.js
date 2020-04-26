@@ -148,7 +148,6 @@ function pass() {
   }
   var password = SHA256(prompt("비밀번호를 입력해 주세요.\n힌트를 얻으려면 '힌트'라고 입력해 주세요."));
 } catch(e){
-  alert("로그인 실패!");
   window.location.href = "index.html"
 }
   if(password=="44746a61424c86daa2d049ba6a72c1599ea1d95b428d3a4b610082411d1b9df7"){

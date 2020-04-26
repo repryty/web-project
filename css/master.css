@@ -1,29 +1,112 @@
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
-body{
-  margin: 0;
-  font-family: 'Noto Sans KR', sans-serif;
-  text-align: center;
+.header li{
+	margin-left: 10px;
+	margin-right: 10px;
+	float: left;
+	list-style: none;
+	color: #333333;
+	transition: color 1s;
 }
-.safe1{
-  width: 100%;
-  position: absolute;
-  top: 10%;
-  left: 50%;
-  transform: translateX(-50%);
+.header li:hover{
+	margin-left: 10px;
+	margin-right: 10px;
+	float: left;
+	list-style: none;
+	color: #888888;
+	transition: color 1s;
+}
+body{
+	margin: 0;
+	text-align: center;
+}
+div.header#menu{
+	text-align: center;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 30px;
+	border-bottom-color: gray;
+	border-bottom-style: solid;
+	border-bottom-width: 2px;
+	padding-bottom: 20px;
+	background-color: white;
+	z-index: 1;
+}
+@media screen and (max-width: 430px) {
+	.header img{
+		height: 40px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translateY(-50%) translateX(-50%);
+		opacity: 0;
+	}
+	iframe{
+		width: 350px;
+		height: 283.5px;
+	}
+}
+@media screen and (min-width: 430px) and (max-width: 700px) {
+	.header img{
+		height: 40px;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%) translateX(-50%);
+	}
+	.header ul a li#img1{
+		position: absolute;
+		top: 50%;
+		right: 10%;
+		transform: translateX(-50%);
+	}
+	iframe{
+		width: 420px;
+		height: 236.25px;
+	}
+}
+.header img{
+	height: 40px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateY(-50%) translateX(-50%);
+}
+.header a{
+	text-decoration: none;
+	color: #333333;
+}
+.boder{
+	position: absolute;
+	top: 70px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.time{
+	border: gray 1px solid;
+}
+input{
+	border: gray 1px solid;
+	background-color: white;
+
+}
+textarea{
+	border: gray 1px solid;
+	background-color: white;
+
 }
 button{
-  border: 1px aqua solid;
-  background-color: white;
-  box-shadow: 0px 0px 5px 0 darkgray;
-}
-.clock{
-  position: absolute;
-  top: 0;
-  width: 100%;
+	border: gray 1px solid;
+	background-color: white;
+
 }
 select{
-  border: 1px aqua solid;
-  background-color: white;
-  box-shadow: 0px 0px 5px 0 darkgray;
-  display: inline-block;
+	border: gray 1px solid;
+	background-color: white;
+
+}
+@media screen and (min-width: 700px) {
+iframe{
+	width: 560px;
+	height: 315px;
+}
 }
