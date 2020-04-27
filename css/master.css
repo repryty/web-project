@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Single+Day&display=swap');
 @font-face {
 font-family: 'logo';
 font-style: normal;
@@ -12,6 +13,9 @@ src: local('Product Sans'), url('../font/ProductSans-Regular.woff') format('woff
 	list-style: none;
 	color: #333333;
 	transition: color 1s;
+}
+a{
+	color: inherit;
 }
 .header li:hover{
 	margin-left: 10px;
@@ -39,7 +43,7 @@ div.header#menu{
 	border-bottom-width: 2px;
 	padding-bottom: 20px;
 	background-color: white;
-	z-index: 1;
+	z-index: 10;
 }
 @media screen and (max-width: 430px) {
 	.header img{
@@ -129,11 +133,30 @@ iframe{
 	width: 100%;
 	height: 100%;
 	background-image: url('../img/background-1.jpg');
-	background-repeat: repeat;
-	background-position: fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
 	background-size: 100%;
 	position: absolute;
 	top: 25%;
+}
+.image2{
+	width: 100%;
+	height: 100%;
+	background-image: url('../img/background-2.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: 100%;
+	position: absolute;
+	top: 120%;
+}
+.cut2{
+	width: 100%;
+	position: absolute;
+	top: 119%;
+	background-color: white;
+	z-index: 2;
 }
 #fuck{
 	text-decoration: line-through;
