@@ -28,7 +28,6 @@ a{
 body{
 	margin: 0;
 	text-align: center;
-	pointer-events: none;
 	font-family: 'logo' 'Noto Sans KR', sans-serif;
 }
 div.header#menu{
