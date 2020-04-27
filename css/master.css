@@ -123,35 +123,35 @@ iframe{
 }
 .cut1{
 	width: 100%;
-	position: absolute;
+	position: relative;
 	top: 24%;
 	background-color: white;
 }
 .image1{
 	width: 100%;
-	height: 100%;
+	height: 500px;
 	background-image: url('../img/background-1.jpg');
 	background-repeat: no-repeat;
 	background-position: center;
 	background-attachment: fixed;
 	background-size: 100%;
-	position: absolute;
+	position: relative;
 	top: 25%;
 }
 .image2{
 	width: 100%;
-	height: 100%;
+	height: 500px;
 	background-image: url('../img/background-2.jpg');
 	background-repeat: no-repeat;
 	background-position: center;
 	background-attachment: fixed;
 	background-size: 100%;
-	position: absolute;
+	position: relative;
 	top: 120%;
 }
 .cut2{
 	width: 100%;
-	position: absolute;
+	position: relative;
 	top: 119%;
 	background-color: white;
 	z-index: 2;
