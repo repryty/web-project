@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Single+Day&display=swap');
 @font-face {
 font-family: 'logo';
 font-style: normal;
@@ -28,7 +27,7 @@ a{
 body{
 	margin: 0;
 	text-align: center;
-	font-family: 'logo' 'Noto Sans KR', sans-serif;
+	font-family: 'logo', 'Noto Sans KR', sans-serif;
 }
 div.header#menu{
 	text-align: center;
@@ -169,4 +168,17 @@ iframe{
 	width: 100px;
 	height: 20px;
 	transform: translateX(-50%);
+}
+#fzf{
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 100pt
+}
+span{
+	cursor: context-menu;
+}
+p{
+	cursor: context-menu;
 }
