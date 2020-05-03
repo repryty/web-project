@@ -134,7 +134,7 @@ iframe{
 	background-repeat: no-repeat;
 	background-position: center;
 	background-attachment: fixed;
-	background-size: 100%;
+	background-size: cover;
 	position: relative;
 	top: 25%;
 }
@@ -145,7 +145,7 @@ iframe{
 	background-repeat: no-repeat;
 	background-position: center;
 	background-attachment: fixed;
-	background-size: 100%;
+	background-size: cover;
 	position: relative;
 	top: 120%;
 }
