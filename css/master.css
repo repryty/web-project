@@ -1,184 +1,40 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
 @font-face {
 font-family: 'logo';
 font-style: normal;
 font-weight: normal;
 src: local('Product Sans'), url('../font/ProductSans-Regular.woff') format('woff');
 }
-.header li{
-	margin-left: 10px;
-	margin-right: 10px;
-	float: left;
-	list-style: none;
-	color: #333333;
-	transition: color 1s;
-}
-a{
-	color: inherit;
-}
-.header li:hover{
-	margin-left: 10px;
-	margin-right: 10px;
-	float: left;
-	list-style: none;
-	color: #888888;
-	transition: color 1s;
-}
 body{
-	margin: 0;
-	text-align: center;
-	font-family: 'logo', 'Noto Sans KR', sans-serif;
-}
-div.header#menu{
-	text-align: center;
-	position: fixed;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 30px;
-	border-bottom-color: gray;
-	border-bottom-style: solid;
-	border-bottom-width: 2px;
-	padding-bottom: 20px;
-	background-color: white;
-	z-index: 10;
-}
-@media screen and (max-width: 430px) {
-	.header img{
-		height: 40px;
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translateY(-50%) translateX(-50%);
-		opacity: 0;
-	}
-	iframe{
-		width: 350px;
-		height: 283.5px;
-	}
-}
-@media screen and (min-width: 430px) and (max-width: 700px) {
-	.header img{
-		height: 40px;
-		position: absolute;
-		top: 50%;
-		transform: translateY(-50%) translateX(-50%);
-	}
-	.header ul a li#img1{
-		position: absolute;
-		top: 50%;
-		right: 10%;
-		transform: translateX(-50%);
-	}
-	iframe{
-		width: 420px;
-		height: 236.25px;
-	}
-}
-.header img{
-	height: 40px;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translateY(-50%) translateX(-50%);
-}
-.header a{
-	text-decoration: none;
-	color: #333333;
+  margin: 0;
+  text-align: center;
+  font-family: 'logo', sans-serif;
 }
 .boder{
-	position: absolute;
+  position: absolute;
 	top: 70px;
 	left: 50%;
 	transform: translateX(-50%);
 }
-.time{
-	border: gray 1px solid;
-}
-input{
-	border: gray 1px solid;
-	background-color: white;
-
-}
-textarea{
-	border: gray 1px solid;
-	background-color: white;
-
+#fzf{
+  position: absolute;
+	top: 70px;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+  font-size: 50pt;
 }
 button{
-	border: gray 1px solid;
-	background-color: white;
-
+  background-color: white;
+  border: gray 1px solid;
 }
 select{
-	border: gray 1px solid;
-	background-color: white;
-
+  background-color: white;
+  border: gray 1px solid;
 }
-@media screen and (min-width: 700px) {
-iframe{
-	width: 560px;
-	height: 315px;
+textarea{
+  background-color: white;
+  border: gray 1px solid;
 }
-}
-.cut1{
-	width: 100%;
-	position: relative;
-	top: 24%;
-	background-color: white;
-}
-.image1{
-	width: 100%;
-	height: 500px;
-	background-image: url('../img/background-1.jpg');
-	background-repeat: no-repeat;
-	background-position: center;
-	background-attachment: fixed;
-	background-size: cover;
-	position: relative;
-	top: 25%;
-}
-.image2{
-	width: 100%;
-	height: 500px;
-	background-image: url('../img/background-2.jpg');
-	background-repeat: no-repeat;
-	background-position: center;
-	background-attachment: fixed;
-	background-size: cover;
-	position: relative;
-	top: 120%;
-}
-.cut2{
-	width: 100%;
-	position: relative;
-	top: 119%;
-	background-color: white;
-	z-index: 2;
-}
-#fuck{
-	text-decoration: line-through;
-	font-size: 0.1pt;
-	color: #EEEEEE;
-}
-#onfuck1{
-	position: absolute;
-	top: 90%;
-	left: 50%;
-	width: 100px;
-	height: 20px;
-	transform: translateX(-50%);
-}
-#fzf{
-	position: absolute;
-	top: 20%;
-	left: 50%;
-	transform: translateX(-50%);
-	font-size: 100pt
-}
-span{
-	cursor: context-menu;
-}
-p{
-	cursor: context-menu;
+input{
+  background-color: white;
+  border: gray 1px solid;
 }

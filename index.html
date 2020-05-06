@@ -4,9 +4,12 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title> 리프리티 사이트</title>
-	<link href="./css/master.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="./css/master.css">
+	<link rel="stylesheet" href="./css/header.css">
+	<link rel="stylesheet" href="./css/index.css">
 	<script src="./js/main.js" charset="utf-8"></script>
 	<script src="./js/pass.js" charset="utf-8"></script>
+	<script src="./js/menu.js" charset="utf-8"></script>
 	<link rel="icon" href="./img/icon.png">
 </head>
 <body oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
@@ -19,16 +22,27 @@
 			<!--<a href="#"> <li> sit </li> </a>
 			<a href="#"> <li> amet </li> </a>-->
 		</ul>
+		<button id="allview" onclick="menuopen()"></button>
+	</div>
+	<div id="open" style="transition: left 0.5s;">
+		<button id="allview_open" onclick="menuopen()"></button>
+		<ul>
+			<a href="master.html"> <li> 관리자페이지 </li> </a>
+			<a href="teabo.html"> <li> 태보 </li> </a>
+			<a href="newfile.html"> <li> 파일생성기 </li> </a>
+			<!--<a href="#"> <li> sit </li> </a>
+			<a href="#"> <li> amet </li> </a>-->
+		</ul>
 	</div>
 	<div class="boder">
-		<div class="time">
+		<!--<div class="time">
 			<span>시계</span>
 			<div class="timer">
 				<script type="text/javascript">
         	getTime();
       	</script>
 			</div>
-		</div>
+		</div>-->
 
 	</div>
 	<div style="height: 60px;"></div>
@@ -41,18 +55,16 @@
 			CSS도 어느정도 해요<br>
 			HTML은 당연히 어느정도 하죠<br>
 			그리고.. <b>가장 싫어하는건</b>..
-			바로 <b>개</b>에요.
-		</span><br>
-		<span id="onfuck1"></span>
-		<span id="fuck">tlqkf 개 극혐 ㅗㅗㅗ</span>
+			바로 <b>개</b>에요.<br><br>
+		</span>
 	</div>
 	<div class="image1"></div>
-	<div class="cut2">
+	<div class="cut2"><br><br>
 		<span style="font-size: 15pt;"> <b>관련 페이지들</b> </span>
 		<br>
 		<span> <a href="https://repryty.kro.kr/">리프리티 티스토리</a>	</span> <br>
 		<span> <a href="https://github.com/repryty/">리프리티 github</a>	</span> <br>
-		<span> <a href="https://spear.cf">Spear Project</a>	</span>
+		<span> <a href="https://spear.cf">Spear Project</a>	</span><br><br>
 	</div>
 	<div class="image2">
 
