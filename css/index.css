@@ -27,6 +27,7 @@
   left: 200%;
   transform: translateX(-100%);
   transition: left 0.5s;
+  z-index: 11;
 }
 #allview_open{
   border: black 4px solid;
