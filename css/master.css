@@ -4,6 +4,9 @@ font-style: normal;
 font-weight: normal;
 src: local('Product Sans'), url('../font/ProductSans-Regular.woff') format('woff');
 }
+hr{
+  border: gray 1px solid;
+}
 body{
   margin: 0;
   text-align: center;
