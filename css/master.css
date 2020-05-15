@@ -54,3 +54,15 @@ input{
   cursor: context-menu;
   color: #FFFFFF00;
 }
+#loading{
+    width:100%;
+    height:100%;
+    position:fixed;
+    left:0px;
+    top:0px;
+    background:#fff;
+    z-index:1000; /* 이 값으로 레이어의 위치를 조정합니다. */
+    transition: all 0.5s ease 0.5s;
+    text-align: center;
+    font-size: 5em;
+}

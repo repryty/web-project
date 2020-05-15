@@ -1,4 +1,10 @@
 var title, text;
+function load() {
+  setTimeout(function() {
+    document.getElementById('loading').style.display = 'none';
+  }, 1000)
+  document.getElementById('loading').style.opacity = '0%'
+}
 function File(fileName, content) {
     var blob = new Blob([content], { type: 'text/plain' });
 
@@ -39,6 +45,7 @@ function getTime() {
     document.getElementById("time").innerHTML = timer;
 }, 300);
 }
+
 /*function number1() {
   //try{
   var num1 = document.getElementById("i1").value;

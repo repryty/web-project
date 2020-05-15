@@ -157,7 +157,7 @@ function pass() {
   } else if(password=="d28ab44b3ef4b571a3003a1be6441637c5951a99d16d89764727b46ce7833674"){
     console.log("로그인 성공.");
     alert("로그인에 성공하셨습니다!!");
-    setCookie("로그인",헿,10);
+    //setCookie("로그인",헿,10);
     login = true;
   } else {
     alert("비밀번호가 맞지 않습니다.")

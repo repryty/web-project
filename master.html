@@ -12,7 +12,8 @@
 	<script src="./js/menu.js" charset="utf-8"></script>
 	<link rel="icon" href="./img/icon.png">
 </head>
-<body onload="pass();" oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+<body onload="pass(); load();" oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+	<div id="loading" style="transition: all 0.5s ease 0.5s;">Loading..</div>
 	<div class="header" id="menu">
 		<ul>
 			<a href="index.html" title="홈"> <li id="img1"> <img src="./img/logo.png" alt="로고"> </li> </a>
