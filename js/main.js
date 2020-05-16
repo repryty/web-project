@@ -66,3 +66,17 @@ function getTime() {
   document.getElementById("i3").innerHTML = "오류 발생! 값을 다시 확인해주세요!";
 }
 }*/
+var agent = navigator.userAgent.toLowerCase();
+
+
+
+if ( (navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) || (agent.indexOf("msie") != -1) ) {
+
+alert("인터넷 익스플로러는 리프리티 사이트에서 사용할수 없습니다.")
+window.close();
+
+}
+
+else {
+  //document.getElementById("body").setAttribute( 'onclick', '' )
+}
