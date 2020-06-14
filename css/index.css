@@ -1,0 +1,7 @@
+#bi1{
+    background-image: url(../img/background-1.jpg);
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+}

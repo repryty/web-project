@@ -1,0 +1,31 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    font-weight: 530;
+    color: black;
+    transition: color 0.3s ease;
+}
+a::after{
+    content: "";
+    display: block;
+    border-bottom: gray 2px solid;
+    width: 0;
+    transition: color 0.3s ease, width 0.3s ease;
+}
+a:hover{
+    color: gray;
+    transition: color 0.3s ease;
+}
+a:hover::after{
+    content: "";
+    display: block;
+    border-bottom: gray 2px solid;
+    width: 100%;
+    transition: color 0.3s ease, width 0.3s ease;
+}
