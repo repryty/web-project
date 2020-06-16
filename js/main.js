@@ -39,6 +39,11 @@ function getTime() {
     document.getElementById("time").innerHTML = timer;
 }, 300);
 }
+function consolefun() {
+  var con = document.getElementById("console").innerHTML;
+  var ev = eval(con);
+  document.getElementById("out").innerHTML = document.getElementById("out").innerHTML+"<"+ev
+}
 /*function number1() {
   //try{
   var num1 = document.getElementById("i1").value;
