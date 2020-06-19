@@ -4,30 +4,32 @@ html{
 body{
     margin: 0;
     text-align: center;
+    font-family: sans-serif;
+    font-weight: 10;
 }
 a{
     text-decoration: none;
     font-weight: 530;
     color: black;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease-in-out;
 }
 a::after{
     content: "";
     display: block;
-    border-bottom: gray 2px solid;
+    border-bottom: black 2px solid;
     width: 0;
-    transition: color 0.3s ease, width 0.3s ease;
+    transition: color 0.3s ease-in-out, width 0.3s ease-in-out, border 0.3s ease-in-out;
 }
 a:hover{
     color: gray;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease-in-out, border 0.3s ease-in-out;
 }
 a:hover::after{
     content: "";
     display: block;
     border-bottom: gray 2px solid;
     width: 100%;
-    transition: color 0.3s ease, width 0.3s ease;
+    transition: color 0.3s ease-in-out, width 0.3s ease-in-out;
 }
 #loading{
     background-color: white;
@@ -40,7 +42,7 @@ a:hover::after{
     animation-name: load;
     animation-direction: alternate;
     animation-duration: 2s;
-    animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out-in-out;
     animation-delay: 0s;
     animation-iteration-count: infinite;
     z-index: 2;
