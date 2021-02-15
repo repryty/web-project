@@ -1,0 +1,88 @@
+.topbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(26, 26, 26);
+    width: 100%;
+    height: 50px;
+    z-index: 10;
+}
+.topbar li>a{
+    text-decoration: none;
+    color: white;
+}
+.topbar li>a>button{
+    background-color: white;
+    border-radius: 100%;
+    border-color: black;
+    border-width: 5px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    transition: border-color 0.5s ease-in-out, background-color 0.5s ease-in-out;
+    border-style: solid;
+}
+.topbar li>a>button:hover{
+    background-color: black;
+    border-radius: 100%;
+    border-color: white;
+    transition: border-color 0.5s ease-in-out, background-color 0.5s ease-in-out, border-radius 0.1s ease-in-out;
+}
+.topbar li>a>button:active{
+    background-color: black;
+    border-radius: 30%;
+    border-color: white;
+    transition: border-color 0.5s ease-in-out, background-color 0.5s ease-in-out, border-radius 0.1s ease-in-out;
+
+}
+.topbar li>a>button:focus{
+    outline: none;
+}
+.topbar li>a>button::after{
+    content: "Go to Main Page";
+    font-family: 'Y_Spotlight', sans-serif;
+    color: white;
+    position: absolute;
+    left: 50px;
+    top: 50%;
+    font-size: 15pt;
+    transform: translateY(-50%);
+    transition: color 0.5s ease-in-out;
+    white-space: nowrap;
+}
+.topbar li>a>button:hover::after{
+    content: "Go to Main Page";
+    font-family: 'Y_Spotlight', sans-serif;
+    color: black;
+    position: absolute;
+    left: 50px;
+    top: 50%;
+    font-size: 15pt;
+    transform: translateY(-50%);
+    transition: color 0.4s ease-in-out;
+}
+@media screen and (max-width: 768px) { 
+    .topbar{
+        height: 100px;
+    }
+    .topbar li>a>button{
+        width: 80px;
+        height: 80px;
+    }
+    .topbar li>a>button::after{
+        content: "Home";
+        font-size: 30pt;
+        left: 80px;
+        border-width: 10px;
+    }
+    .topbar li>a>button:hover::after{
+        content: "Home";
+        font-size: 30pt;
+        left: 80px;
+        border-width: 10px;
+    }
+}
