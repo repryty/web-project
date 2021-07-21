@@ -1,0 +1,14 @@
+#about{
+    background: linear-gradient(135deg, rgb(206, 206, 206), rgb(230, 230, 230));
+    box-shadow: -1px -1px 0 0 white, 5px 5px 25px 0 rgb(167, 167, 167), -3px -3px 20px 0 white;
+    width: 35%;
+    height: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    border-radius: 30px;
+}
+body{
+    background-color: rgb(201, 201, 201);
+}
